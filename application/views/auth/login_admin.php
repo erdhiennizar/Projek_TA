@@ -62,6 +62,20 @@ html, body {
   color: rgba(255,255,255,.85);
 }
 
+.btn-primary {
+  background: linear-gradient(135deg, #003366, #0055aa);
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px;
+  transition: all .3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
 .role-buttons a {
   font-size: 15px;
   padding: 6px 14px;
@@ -129,7 +143,7 @@ html, body {
     </div>
 
     <div class="role-buttons">
-      <a href="<?= site_url('auth/login?role=admin') ?>" class="btn btn-sm btn-outline-light">Admin</a>
+      <a href="<?= site_url('auth/login?role=admin') ?>" class="btn btn-sm btn-outline-light active">Admin</a>
       <a href="<?= site_url('auth/login?role=participant') ?>" class="btn btn-sm btn-outline-light">Peserta</a>
     </div>
   </div>
